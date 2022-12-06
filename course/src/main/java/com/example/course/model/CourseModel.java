@@ -1,10 +1,14 @@
 package com.example.course.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 @Entity
 @Table
 public class CourseModel {
+    @Id
+    @GeneratedValue
     private int id;
     private String courseTitle;
     private String courseDescription;
